@@ -1,5 +1,5 @@
-# ecoleta
-# next level week
+# ecoleta | next level week
 
- Site "Ecoleta" realizado durante o Next Level Week, organizado pela Rocketseat
- Iniciando o básico do HTML, CSS e JAVASCRIPT
+ Site realizado durante o Next Level Week no mês de Junho/2020, evento organizado pela @rocketseat
+ 
+ Conhecendo HTML, CSS e JAVASCRIPT
