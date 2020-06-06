@@ -24,11 +24,23 @@
     #page-search-results .cards {
         grid-template-columns: 1fr 1fr;
     }
+
+    #page-create-point form .field-group {
+        flex-direction: column;
+    }
+
+    form .field-group .field + .field {
+        margin-left: 0;
+    }
 }
 
 @media (max-width: 620px) {
     #page-search-results .cards {
         grid-template-columns: 1fr;
+    }
+
+    #page-create-point .items-grid {
+        grid-template-columns: 1fr 1fr;
     }
 }
 
