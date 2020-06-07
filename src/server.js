@@ -27,7 +27,15 @@ server.get("/", (req, res) => {
 })
 
 server.get("/create-point", (req, res) => {
+
+    // req.query = query strings da nossa url
+    console.log(req.query)
+
     return res.render("create-point.html")
+})
+
+server.post("/savepoint", (req, res) => {
+    return res.send("ok")
 })
 
 server.get("/search", (req, res) => {
@@ -41,10 +49,11 @@ server.get("/search", (req, res) => {
         console.log("Aqui estão seus regristros: ")
         console.log(rows)
 
-        // mostrar a página html com os dados do banco de dados
-        return res.render("search-results.html", { places: rows })
-    }) 
+        const total = rows.length
 
+        // mostrar a página html com os dados do banco de dados
+        return res.render("search-results.html", { places: rows, total: total })
+    }) 
 })
 
 // ligar o servidor
